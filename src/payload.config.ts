@@ -37,13 +37,13 @@ export default buildConfig({
   }),
   sharp,
   plugins: [
-    payloadCloudPlugin(),
-    vercelBlobStorage({
-      collections: {
-        media: true,
-      },
-      token: process.env.BLOB_READ_WRITE_TOKEN || '',
-    }),
+    // payloadCloudPlugin(), // Temporarily disabled
+    // vercelBlobStorage({
+    //   collections: {
+    //     media: true,
+    //   },
+    //   token: process.env.BLOB_READ_WRITE_TOKEN || '',
+    // }),
     // storage-adapter-placeholder
   ],
 })
