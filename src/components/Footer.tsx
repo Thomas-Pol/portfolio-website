@@ -9,7 +9,7 @@ export function Footer() {
                 <div className="absolute bottom-20 right-32 w-80 h-80 bg-blue-400 rounded-full blur-3xl animate-pulse delay-1000"></div>
                 <div className="absolute top-1/3 right-1/4 w-64 h-64 bg-blue-200 rounded-full blur-3xl animate-pulse delay-500"></div>
                 <div className="absolute bottom-1/3 left-1/4 w-72 h-72 bg-blue-500 rounded-full blur-3xl animate-pulse delay-700"></div>
-            </div>
+            </div>    
 
             <div className="max-w-7xl mx-auto px-8 relative z-10">
                 {/* hoofd container contact */}
