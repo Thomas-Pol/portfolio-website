@@ -1,5 +1,6 @@
 // storage-adapter-import-placeholder
 import { postgresAdapter } from '@payloadcms/db-postgres'
+import { payloadCloudPlugin } from '@payloadcms/payload-cloud'
 import { lexicalEditor } from '@payloadcms/richtext-lexical'
 import path from 'path'
 import { buildConfig } from 'payload'
@@ -13,6 +14,8 @@ import { AboutMe } from './globals/About'
 
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
+
+console.log(process.env.DATABASE_URL);
 
 export default buildConfig({
   admin: {
@@ -35,6 +38,7 @@ export default buildConfig({
   }),
   sharp,
   plugins: [
+    payloadCloudPlugin(),
     // storage-adapter-placeholder
   ],
 })
