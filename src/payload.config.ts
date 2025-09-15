@@ -15,6 +15,7 @@ import { AboutMe } from './globals/About'
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
 
+console.log("test");
 console.log(process.env.DATABASE_URL);
 
 export default buildConfig({
